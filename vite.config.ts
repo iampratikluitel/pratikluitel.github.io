@@ -1,23 +1,21 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from "path"
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/' : '/',
+  base: "/", // Keep this as root for personal GitHub Pages
   build: {
-    outDir: 'docs',
+    outDir: "docs",
+    emptyOutDir: true, // Add this to clear the docs folder on each build
   },
   server: {
-    host: "::",      // Listen on all interfaces
-    port: 8080,      // Development server port
+    host: "::",
+    port: 8080,
   },
-  plugins: [
-    react(),         // React support with SWC compiler
-  ],
+  plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"), // Path alias for imports
+      "@": path.resolve(__dirname, "./src"),
     },
   },
-})) 
+}));
