@@ -1,6 +1,7 @@
 import MangaPanel from '@/components/MangaPanel'
 import SpeechBubble from '@/components/SpeechBubble'
 import { Code, Database, Cpu, Brain, Zap, Shield, Calculator, Terminal } from 'lucide-react'
+import { CharacterBattle, MainCharacter, VillainCharacter } from '@/components/MangaCharacters'
 
 const SkillScrolls = () => {
   const skillCategories = [
@@ -108,7 +109,7 @@ const SkillScrolls = () => {
 
           <SpeechBubble position="bottom-right">
             <p className="font-manga text-center">
-              How to explain recursion to classmates using only coffee cups and existential dread.
+              How to explain recursion to classmates using existential dread.
             </p>
           </SpeechBubble>
 
@@ -117,6 +118,11 @@ const SkillScrolls = () => {
               How to debug TensorFlow models at 3AM while questioning if free will exists.
             </p>
           </SpeechBubble>
+        </div>
+        
+        {/* Character Battle Scene */}
+        <div className="mt-8">
+          <CharacterBattle />
         </div>
       </MangaPanel>
 
@@ -180,12 +186,11 @@ const SkillScrolls = () => {
           The Digital Existentialism
         </h3>
         
-        <SpeechBubble className="mb-6">
+        <SpeechBubble position="bottom-center" className="mb-6">
           <p className="font-manga-handwrite text-lg italic text-center">
-            "Code is poetry written in a language only machines understand. 
-            But when it compiles without errors, it's magic that even humans can appreciate."
+            "In the end, we are but shadows of echoes screaming into jars of mayonnaise, hoping the void sends us a coupon for meaning. But the void doesn’t shop here."
           </p>
-          <p className="text-right font-manga text-sm mt-2">- Pratik, 3AM debugging session</p>
+          <p className="text-right font-manga text-sm mt-2">- Pratik</p>
         </SpeechBubble>
 
         <div className="grid md:grid-cols-3 gap-6 text-center">

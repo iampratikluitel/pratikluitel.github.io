@@ -92,11 +92,11 @@ const VolunteeringArc = () => {
             <h4 className="font-manga-title text-xl">Daily Quests</h4>
             <SpeechBubble className="text-sm">
               <p className="font-manga">
-                - Finish final year project
+                - do things
                 <br />
                 - Master new technologies
                 <br />
-                - Consume optimal amount of coffee
+                - Consume optimal amount of something
                 <br />- Debug life.exe
               </p>
             </SpeechBubble>
@@ -107,7 +107,7 @@ const VolunteeringArc = () => {
             <h4 className="font-manga-title text-xl">Future Missions</h4>
             <SpeechBubble className="text-sm">
               <p className="font-manga">
-                - Join a tech company
+                - Get into college
                 <br />
                 - Build world-changing apps
                 <br />
@@ -175,7 +175,7 @@ const VolunteeringArc = () => {
                 Casual Mode
               </h4>
               <div className="space-y-2 font-manga text-sm">
-                <p>☕ Always up for coffee & code discussions</p>
+                <p>☕ Always up for useless discussions</p>
                 <p>🤖 AI/ML enthusiast & researcher</p>
                 <p>📚 Manga & anime aficionado</p>
                 <p>🎮 Gaming companion (when time permits)</p>
@@ -183,11 +183,15 @@ const VolunteeringArc = () => {
             </div>
           </div>
 
-          <div className="power-level text-center">
+          <div className="power-level text-center mb-6">
             <span className="font-manga-title text-lg">
               STATUS: AVAILABLE FOR EPIC COLLABORATIONS
             </span>
           </div>
+          
+
+          
+
         </div>
       </MangaPanel>
 
@@ -197,7 +201,7 @@ const VolunteeringArc = () => {
           TO BE CONTINUED...
         </h3>
 
-        <SpeechBubble className="mb-6">
+        <SpeechBubble position="bottom-center" className="mb-6">
           <p className="font-manga-handwrite text-lg italic">
             "It’s not the end, we’re just the shadow of a cloud passing over the
             void, and the universe is still busy turning its existential

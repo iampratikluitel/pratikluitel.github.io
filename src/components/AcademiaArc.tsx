@@ -178,8 +178,7 @@ const AcademiaArc = () => {
 
               <SpeechBubble position="top-left">
                 <p className="font-manga text-sm">
-                  How to explain recursion to classmates using only coffee cups
-                  and existential dread.
+                  How to explain recursion to classmates using only existential dread.
                 </p>
               </SpeechBubble>
             </div>

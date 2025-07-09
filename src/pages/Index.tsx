@@ -8,6 +8,7 @@ import SkillScrolls from '@/components/SkillScrolls'
 import ResearchArc from '@/components/ResearchArc'
 import ProjectsSaga from '@/components/ProjectsSaga'
 import VolunteeringArc from '@/components/VolunteeringArc'
+import { FloatingCharacter } from '@/components/MangaCharacters'
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -45,7 +46,10 @@ const Index = () => {
   }
 
   return (
-    <div className={`min-h-screen p-4 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`min-h-screen p-4 transition-opacity duration-1000 relative ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+      {/* Floating Manga Characters */}
+
+      
       <div className="max-w-6xl mx-auto">
         {/* Main Title */}
         <div className="text-center mb-8">

@@ -1,6 +1,7 @@
 import MangaPanel from '@/components/MangaPanel'
 import SpeechBubble from '@/components/SpeechBubble'
 import { Brain, Eye, Sun, Heart, Shield, Users, Star } from 'lucide-react'
+import { CharacterTeam } from '@/components/MangaCharacters'
 
 const ProjectsSaga = () => {
   const projects = [
@@ -144,7 +145,7 @@ const ProjectsSaga = () => {
           The Side Quest Epilogue
         </h3>
 
-        <SpeechBubble className="mb-6">
+        <SpeechBubble position="bottom-center" className="mb-6">
           <p className="font-manga-handwrite text-lg italic text-center">
             "Sometimes the projects worked. Sometimes they combusted in a glorious heap of stack traces.
             But in the building, in the failing, and in the trying again, there was something almost… human."
@@ -175,6 +176,8 @@ const ProjectsSaga = () => {
           </div>
           <div className="sound-effect text-sm mt-2">*Achievement Unlocked: Digital Alchemist*</div>
         </div>
+        
+
       </MangaPanel>
     </div>
   )

@@ -56,9 +56,13 @@ const ResearchArc = () => {
               </div>
             </div>
 
-            <div className="power-level text-center">
+            <div className="power-level text-center mb-4">
               <span className="font-manga-title">RESEARCH LEVEL: ADVANCED</span>
             </div>
+            
+
+            
+
           </div>
 
           <div className="space-y-4">
@@ -121,11 +125,9 @@ const ResearchArc = () => {
           The Way of Research
         </h3>
         
-        <SpeechBubble className="mb-6">
+        <SpeechBubble position="bottom-center" className="mb-6">
           <p className="font-manga-handwrite text-lg italic text-center">
-            "Research is the art of asking questions you don't know the answers to, 
-            then spending months finding out that the real question was something completely different. 
-            Also, coffee is essential."
+            "Life is a soup and we are all forks, trying to sip the stars while the void hums jazz in a language only snails remember"
           </p>
           <p className="text-right font-manga text-sm mt-2">- Research Zen Master Pratik</p>
         </SpeechBubble>

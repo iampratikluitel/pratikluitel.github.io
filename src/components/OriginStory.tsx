@@ -40,6 +40,10 @@ const OriginStory = () => {
             <div className="power-level inline-block mb-4">
               <span className="font-manga-title">THIS IS PRATIK</span>
             </div>
+            
+
+            
+
           </div>
 
           <div className="space-y-4">
@@ -125,7 +129,7 @@ const OriginStory = () => {
           The Beginning of Everything
         </h3>
 
-        <SpeechBubble className="mb-4">
+        <SpeechBubble position="bottom-center" className="mb-4">
           <p className="font-manga-handwrite text-lg italic text-center">
             "No one had answers. So he began inventing his own."
           </p>
