@@ -1,6 +1,6 @@
 import MangaPanel from "@/components/MangaPanel";
 import SpeechBubble from "@/components/SpeechBubble";
-import { Users, BookOpen, Coffee, Heart, Lightbulb, Globe } from "lucide-react";
+import { Users, BookOpen, Coffee, Heart, Lightbulb, Globe, Mail, Phone, BrainCircuit, Gamepad2 } from "lucide-react";
 
 const VolunteeringArc = () => {
   return (
@@ -155,17 +155,25 @@ const VolunteeringArc = () => {
                 Professional Mode
               </h4>
               <div className="space-y-2 font-manga text-sm">
-                <p>
-                  📧 <strong>Email:</strong> pratikluitel11@gmail.com
+                <p className="flex items-center gap-2">
+                  <Mail className="w-5 h-5 text-manga-red" />
+                  <strong>Email:</strong> <a href="mailto:pratikluitel11@gmail.com" className="hover:underline" target="_blank" rel="noopener noreferrer">pratikluitel11@gmail.com</a>
                 </p>
-                <p>
-                  📱 <strong>Phone:</strong> +977 9840761001
+                <p className="flex items-center gap-2">
+                  <Phone className="w-5 h-5 text-manga-red" />
+                  <strong>Phone:</strong> <a href="tel:+9779840761001" className="hover:underline" target="_blank" rel="noopener noreferrer">+977 9840761001</a>
                 </p>
-                <p>
-                  💼 <strong>LinkedIn:</strong> /in/pratikluitel
+                <p className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-manga-red" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595zm0 0"/></svg>
+                  <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pratik-luitel/" className="hover:underline" target="_blank" rel="noopener noreferrer">@pratik-luitel</a>
                 </p>
-                <p>
-                  💻 <strong>GitHub:</strong> @pratikluitel
+                <p className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-manga-red" fill="currentColor" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 186.6c-39.6 0-71.7-32.1-71.7-71.7s32.1-71.7 71.7-71.7 71.7 32.1 71.7 71.7-32.1 71.7-71.7 71.7zm146.4-194.3c0 14.9-12.1 27-27 27s-27-12.1-27-27 12.1-27 27-27 27 12.1 27 27zm76.1 27.2c-1.7-35.3-9.9-66.7-36.2-92.1C388.7 9.9 357.3 1.7 322 0 285.7-1.7 256.3 0 224 0s-61.7-1.7-98 0C90.7 1.7 59.3 9.9 33.9 36.2 9.9 59.3 1.7 90.7 0 126c-1.7 36.3 0 65.7 0 98s-1.7 61.7 0 98c1.7 35.3 9.9 66.7 36.2 92.1 23.1 23.1 54.5 31.3 89.8 33 36.3 1.7 65.7 0 98 0s61.7 1.7 98 0c35.3-1.7 66.7-9.9 92.1-36.2 23.1-23.1 31.3-54.5 33-89.8 1.7-36.3 0-65.7 0-98s1.7-61.7 0-98zm-48.1 218.2c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.9 9s-103.5 2.7-132.9-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.9s-2.7-103.5 9-132.9c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.9-9s103.5-2.7 132.9 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.9s2.7 103.5-9 132.9z"/></svg>
+                  <strong>Instagram:</strong> <a href="https://www.instagram.com/prateekluitel/" className="hover:underline" target="_blank" rel="noopener noreferrer">@prateekluitel</a>
+                </p>
+                <p className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-manga-red" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"/></svg>
+                  <strong>GitHub:</strong> <a href="https://github.com/pratikluitel" className="hover:underline" target="_blank" rel="noopener noreferrer">@pratikluitel</a>
                 </p>
               </div>
             </div>
@@ -175,11 +183,19 @@ const VolunteeringArc = () => {
                 Casual Mode
               </h4>
               <div className="space-y-2 font-manga text-sm">
-                <p>☕ Always up for useless discussions</p>
-                <p>🤖 AI/ML enthusiast & researcher</p>
-                <p>📚 Manga & anime aficionado</p>
-                <p>🎮 Gaming companion (when time permits)</p>
-              </div>
+      <p className="flex items-center gap-2">
+        <Coffee size={16} /> Always up for useless discussions
+      </p>
+      <p className="flex items-center gap-2">
+        <BrainCircuit size={16} /> AI/ML enthusiast & researcher
+      </p>
+      <p className="flex items-center gap-2">
+        <BookOpen size={16} /> Manga & anime aficionado
+      </p>
+      <p className="flex items-center gap-2">
+        <Gamepad2 size={16} /> Gaming companion (when time permits)
+      </p>
+    </div>
             </div>
           </div>
 

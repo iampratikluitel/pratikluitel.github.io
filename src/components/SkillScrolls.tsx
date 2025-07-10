@@ -121,9 +121,7 @@ const SkillScrolls = () => {
         </div>
         
         {/* Character Battle Scene */}
-        <div className="mt-8">
-          <CharacterBattle />
-        </div>
+
       </MangaPanel>
 
       {/* Technical Arsenal */}

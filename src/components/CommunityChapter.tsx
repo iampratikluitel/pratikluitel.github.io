@@ -1,6 +1,6 @@
 import MangaPanel from '@/components/MangaPanel'
 import SpeechBubble from '@/components/SpeechBubble'
-import { Heart, Users, Presentation, Calendar, MapPin, ExternalLink, TreePine, Blocks } from 'lucide-react'
+import { Heart, Users, Presentation, Calendar, MapPin, ExternalLink, TreePine, Blocks, Phone, Mail } from 'lucide-react'
 
 const CommunityChapter = () => {
   return (
@@ -179,20 +179,24 @@ const CommunityChapter = () => {
               <h4 className="font-manga-title text-lg text-manga-red mb-4">Contact Protocols</h4>
               <div className="space-y-3 font-manga text-sm">
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-manga-red rounded-full" />
-                  <span><strong>Email:</strong> pratikluitel11@gmail.com</span>
+                  <Mail className="w-5 h-5 text-manga-red" />
+                  <a href="mailto:pratikluitel11@gmail.com" className="hover:underline" target="_blank" rel="noopener noreferrer"><strong>Email:</strong> pratikluitel11@gmail.com</a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-manga-red rounded-full" />
-                  <span><strong>Phone:</strong> +977 9840761001</span>
+                  <Phone className="w-5 h-5 text-manga-red" />
+                  <a href="tel:+9779840761001" className="hover:underline" target="_blank" rel="noopener noreferrer"><strong>Phone:</strong> +977 9840761001</a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-manga-red rounded-full" />
-                  <span><strong>Location:</strong> Kathmandu, Nepal</span>
+                  <MapPin className="w-5 h-5 text-manga-red" />
+                  <a href="https://maps.google.com/?q=Kathmandu, Nepal" className="hover:underline" target="_blank" rel="noopener noreferrer"><strong>Location:</strong> Kathmandu, Nepal</a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-manga-red rounded-full" />
-                  <span><strong>LinkedIn:</strong> Available upon request</span>
+                  <svg className="w-5 h-5 text-manga-red" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595zm0 0"/></svg>
+                  <a href="https://www.linkedin.com/in/pratik-luitel/" className="hover:underline" target="_blank" rel="noopener noreferrer"><strong>LinkedIn:</strong> @pratik-luitel</a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-manga-red" fill="currentColor" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 186.6c-39.6 0-71.7-32.1-71.7-71.7s32.1-71.7 71.7-71.7 71.7 32.1 71.7 71.7-32.1 71.7-71.7 71.7zm146.4-194.3c0 14.9-12.1 27-27 27s-27-12.1-27-27 12.1-27 27-27 27 12.1 27 27zm76.1 27.2c-1.7-35.3-9.9-66.7-36.2-92.1C388.7 9.9 357.3 1.7 322 0 285.7-1.7 256.3 0 224 0s-61.7-1.7-98 0C90.7 1.7 59.3 9.9 33.9 36.2 9.9 59.3 1.7 90.7 0 126c-1.7 36.3 0 65.7 0 98s-1.7 61.7 0 98c1.7 35.3 9.9 66.7 36.2 92.1 23.1 23.1 54.5 31.3 89.8 33 36.3 1.7 65.7 0 98 0s61.7 1.7 98 0c35.3-1.7 66.7-9.9 92.1-36.2 23.1-23.1 31.3-54.5 33-89.8 1.7-36.3 0-65.7 0-98s1.7-61.7 0-98zm-48.1 218.2c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.9 9s-103.5 2.7-132.9-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.9s-2.7-103.5 9-132.9c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.9-9s103.5-2.7 132.9 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.9s2.7 103.5-9 132.9z"/></svg>
+                  <a href="https://www.instagram.com/prateekluitel/" className="hover:underline" target="_blank" rel="noopener noreferrer"><strong>Instagram:</strong> @prateekluitel</a>
                 </div>
               </div>
             </div>
