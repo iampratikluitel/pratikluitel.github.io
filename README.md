@@ -145,7 +145,7 @@ While this is a personal portfolio, I welcome:
 - **Email**: pratikluitel11@gmail.com
 - **Phone**: +977 9840761001
 - **LinkedIn**: [/in/pratikluitel](https://linkedin.com/in/pratikluitel)
-- **GitHub**: [@pratikluitel](https://github.com/pratikluitel)
+- **GitHub**: [@iampratikluitel](https://github.com/iampratikluitel)
 
 ---
 

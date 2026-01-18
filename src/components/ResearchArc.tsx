@@ -43,7 +43,7 @@ const ResearchArc = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Plane className="w-4 h-4" />
-                  <span><strong>Duration:</strong> Summer 2023</span>
+                  <span><strong>Duration:</strong> Feb 2024 - May 2024</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Building className="w-4 h-4" />
@@ -97,12 +97,42 @@ const ResearchArc = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <div className="bg-manga-ink/5 p-6 rounded-lg border-2 border-manga-ink">
-              <h4 className="font-manga-title text-lg mb-4">Clock B Business Technology</h4>
-              <div className="space-y-2 font-manga text-sm">
-                <p><strong>Role:</strong> Software Development Intern</p>
-                <p><strong>Skills Applied:</strong> Full-stack Development</p>
-                <p><strong>Achievement:</strong> Built scalable business solutions</p>
-                <p><strong>Secret Technique:</strong> Converting business requirements into code</p>
+              <h4 className="font-manga-title text-lg mb-4">Full Stack Developer</h4>
+              <h5 className="font-manga text-md text-manga-ink mb-3">Clock B Business Technology</h5>
+              <div className="space-y-2 font-manga text-sm mb-4">
+                <p><strong>Duration:</strong> Dec 2024 - Nov 2025</p>
+              </div>
+              
+              <div className="space-y-3 mt-4">
+                <div className="bg-green-100 p-3 rounded-lg border-l-4 border-green-500">
+                  <p className="font-manga text-sm text-green-800">
+                    • Built a full-stack web application using the MERN stack, implementing secure authentication and role-based access control.
+                  </p>
+                </div>
+                
+                <div className="bg-blue-100 p-3 rounded-lg border-l-4 border-blue-500">
+                  <p className="font-manga text-sm text-blue-800">
+                    • Designed and optimized MongoDB schemas to efficiently store and retrieve application data.
+                  </p>
+                </div>
+                
+                <div className="bg-purple-100 p-3 rounded-lg border-l-4 border-purple-500">
+                  <p className="font-manga text-sm text-purple-800">
+                    • Developed RESTful APIs with Express.js to handle user interactions and integrate third-party services.
+                  </p>
+                </div>
+                
+                <div className="bg-orange-100 p-3 rounded-lg border-l-4 border-orange-500">
+                  <p className="font-manga text-sm text-orange-800">
+                    • Implemented dynamic and responsive user interfaces using React.js, enhancing user experience.
+                  </p>
+                </div>
+                
+                <div className="bg-red-100 p-3 rounded-lg border-l-4 border-red-500">
+                  <p className="font-manga text-sm text-red-800">
+                    • Optimized server-side performance with Node.js, improving request handling and response times.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

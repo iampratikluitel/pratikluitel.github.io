@@ -4,7 +4,6 @@ import {
   GraduationCap,
   Award,
   Calendar,
-  MapPin,
   Trophy,
   Book,
 } from "lucide-react";
@@ -141,7 +140,7 @@ const AcademiaArc = () => {
             "Information Security",
             "Internet of Things",
             "Cyber Security",
-          ].map((course, index) => (
+          ].map((course) => (
             <div
               key={course}
               className="bg-manga-ink/5 p-3 rounded-lg border border-manga-ink"

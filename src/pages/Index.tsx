@@ -4,6 +4,7 @@ import MangaPanel from '@/components/MangaPanel'
 import SpeechBubble from '@/components/SpeechBubble'
 import OriginStory from '@/components/OriginStory'
 import AcademiaArc from '@/components/AcademiaArc'
+import BonnChapter from '@/components/BonnChapter'
 import SkillScrolls from '@/components/SkillScrolls'
 import ResearchArc from '@/components/ResearchArc'
 import ProjectsSaga from '@/components/ProjectsSaga'
@@ -16,6 +17,7 @@ const Index = () => {
   const chapters = [
     { id: "origin", title: "Tutorial Phase", subtitle: "The Crying Creature" },
     { id: "academia", title: "Scholarship.exe", subtitle: "Call to Adventure" },
+    { id: "bonn", title: "Robotics.exe", subtitle: "German Expedition" },
     { id: "skills", title: "Coding the Abyss", subtitle: "Technical Arsenal" },
     { id: "experience", title: "Singapore Simulation", subtitle: "Research & Reality" },
     { id: "projects", title: "Side Quests", subtitle: "Building Worlds" },
@@ -32,6 +34,8 @@ const Index = () => {
         return <OriginStory />
       case "academia":
         return <AcademiaArc />
+      case "bonn":
+        return <BonnChapter />
       case "skills":
         return <SkillScrolls />
       case "experience":

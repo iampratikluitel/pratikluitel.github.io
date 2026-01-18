@@ -10,8 +10,9 @@ const SkillScrolls = () => {
       icon: <Code className="w-6 h-6" />,
       description: "The ancient tongues of machine communication",
       skills: [
-        { name: "Python", level: "Master", color: "bg-yellow-400", subtitle: "OpenCV, TensorFlow, PyTorch" },
+        { name: "Python", level: "Master", color: "bg-yellow-400", subtitle: "OpenCV, TensorFlow, PyTorch, Pandas" },
         { name: "Java", level: "Advanced", color: "bg-orange-400", subtitle: "Object-oriented enlightenment" },
+        { name: "Node.js", level: "Advanced", color: "bg-green-500", subtitle: "JavaScript runtime mastery" },
         { name: "R", level: "Advanced", color: "bg-blue-400", subtitle: "Statistical wizardry" },
         { name: "MATLAB", level: "Advanced", color: "bg-red-400", subtitle: "Mathematical sorcery" }
       ]
@@ -46,7 +47,12 @@ const SkillScrolls = () => {
         { name: "Git", level: "Advanced", color: "bg-gray-500", subtitle: "Version control sanity" },
         { name: "Docker", level: "Intermediate", color: "bg-blue-500", subtitle: "Containerized existence" },
         { name: "Jupyter Notebook", level: "Expert", color: "bg-orange-400", subtitle: "Interactive enlightenment" },
+        { name: "MongoDB", level: "Advanced", color: "bg-green-700", subtitle: "NoSQL database mastery" },
+        { name: "Nest.js", level: "Advanced", color: "bg-red-600", subtitle: "Scalable Node.js framework" },
+        { name: "Data Annotation", level: "Advanced", color: "bg-purple-500", subtitle: "CVAT, LabelImg" },
         { name: "CUDA", level: "Intermediate", color: "bg-green-600", subtitle: "GPU acceleration magic" },
+        { name: "OpenCL", level: "Intermediate", color: "bg-indigo-600", subtitle: "Parallel computing" },
+        { name: "Bash Scripting", level: "Advanced", color: "bg-gray-700", subtitle: "Automation wizardry" },
         { name: "Linux/Unix", level: "Advanced", color: "bg-black", subtitle: "Command line mastery" }
       ]
     }

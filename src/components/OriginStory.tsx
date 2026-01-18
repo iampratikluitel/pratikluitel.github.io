@@ -56,8 +56,8 @@ const OriginStory = () => {
               <div className="space-y-3 font-manga">
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-manga-red" />
-                  <a href="https://maps.google.com/?q=Kathmandu, Nepal" className="hover:underline" target="_blank" rel="noopener noreferrer">
-                    <strong>Location:</strong> Kathmandu, Nepal
+                  <a href="https://maps.google.com/?q=Bonn, Germany" className="hover:underline" target="_blank" rel="noopener noreferrer">
+                    <strong>Location:</strong> Bonn, Germany
                   </a>
                 </div>
                 <div className="flex items-center gap-3">

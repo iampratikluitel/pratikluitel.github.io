@@ -127,7 +127,91 @@ const ExperienceChapter = () => {
         </SpeechBubble>
       </MangaPanel>
 
-      {/* Clock B Experience */}
+      {/* Clock B Full Stack Developer (Current) */}
+      <MangaPanel variant="action" className="p-8">
+        <h3 className="font-manga-title text-3xl text-manga-ink mb-6 flex items-center gap-3">
+          <Code className="w-8 h-8 text-manga-red" />
+          The Current Quest
+        </h3>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <div className="bg-green-100 p-6 rounded-lg border-2 border-green-500 mb-6">
+              <h4 className="font-manga-title text-xl text-green-800 mb-4">
+                Full Stack Developer
+              </h4>
+              <h5 className="font-manga text-lg text-green-700 mb-3">
+                Clock B Business Technology
+              </h5>
+              <div className="space-y-2 font-manga text-sm">
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4" />
+                  <span><strong>Location:</strong> Bonn, Germany</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4" />
+                  <span><strong>Duration:</strong> Dec 2024 - Nov 2025</span>
+                </div>
+              </div>
+            </div>
+
+            <SpeechBubble>
+              <p className="font-manga italic">
+                The latest chapter: Full-stack mastery in the heart of Europe, where 
+                MERN stack meets real-world business solutions.
+              </p>
+            </SpeechBubble>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-manga-title text-xl text-manga-ink">The Full Stack Chronicles</h4>
+            
+            <div className="space-y-3">
+              <div className="bg-green-100 p-4 rounded-lg border-l-4 border-green-500">
+                <div className="flex items-center gap-2 mb-2">
+                  <Code className="w-5 h-5 text-green-600" />
+                  <h5 className="font-manga-title text-sm text-green-800">MERN Stack Development</h5>
+                </div>
+                <p className="font-manga text-sm text-green-700">
+                  Building web applications with MongoDB, Express.js, React.js, and Node.js.
+                </p>
+              </div>
+
+              <div className="bg-blue-100 p-4 rounded-lg border-l-4 border-blue-500">
+                <div className="flex items-center gap-2 mb-2">
+                  <Database className="w-5 h-5 text-blue-600" />
+                  <h5 className="font-manga-title text-sm text-blue-800">Database Architecture</h5>
+                </div>
+                <p className="font-manga text-sm text-blue-700">
+                  Designing MongoDB schemas for efficient data storage and retrieval.
+                </p>
+              </div>
+
+              <div className="bg-purple-100 p-4 rounded-lg border-l-4 border-purple-500">
+                <div className="flex items-center gap-2 mb-2">
+                  <Code className="w-5 h-5 text-purple-600" />
+                  <h5 className="font-manga-title text-sm text-purple-800">RESTful API Development</h5>
+                </div>
+                <p className="font-manga text-sm text-purple-700">
+                  Developing RESTful APIs for seamless frontend-backend communication.
+                </p>
+              </div>
+
+              <div className="bg-orange-100 p-4 rounded-lg border-l-4 border-orange-500">
+                <div className="flex items-center gap-2 mb-2">
+                  <Code className="w-5 h-5 text-orange-600" />
+                  <h5 className="font-manga-title text-sm text-orange-800">Performance Optimization</h5>
+                </div>
+                <p className="font-manga text-sm text-orange-700">
+                  Optimizing server-side performance with Node.js for scalable applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </MangaPanel>
+
+      {/* Clock B Internship Experience */}
       <MangaPanel variant="action" className="p-8">
         <h3 className="font-manga-title text-3xl text-manga-ink mb-6 flex items-center gap-3">
           <Code className="w-8 h-8 text-manga-red" />
