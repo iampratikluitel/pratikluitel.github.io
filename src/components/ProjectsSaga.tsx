@@ -1,7 +1,6 @@
 import MangaPanel from '@/components/MangaPanel'
 import SpeechBubble from '@/components/SpeechBubble'
-import { Brain, Eye, Sun, Heart, Shield, Users, Star } from 'lucide-react'
-import { CharacterTeam } from '@/components/MangaCharacters'
+import { Brain, Eye, Sun, Heart, Shield, Users } from 'lucide-react'
 
 const ProjectsSaga = () => {
   const projects = [
@@ -11,8 +10,8 @@ const ProjectsSaga = () => {
       icon: <Brain className="w-8 h-8" />,
       tech: ["Python", "PyTorch", "Contrastive Learning"],
       description: "A Siamese network with self-attention for few-shot learning. Transformer vibes, twin trauma, and contrastive enlightenment.",
-      achievement: "Few-Shot Accuracy ++",
-      status: "Epic",
+      achievement: "Accepted at ISPR",
+      status: "Legendary",
       color: "bg-purple-500"
     },
     {
@@ -21,8 +20,8 @@ const ProjectsSaga = () => {
       icon: <Eye className="w-8 h-8" />,
       tech: ["Python", "TensorFlow", "Stereo Matching"],
       description: "A framework that regularizes stereo matching with edge structures. Because machines deserve depth perception, too.",
-      achievement: "Accepted at ISPR",
-      status: "Legendary",
+      achievement: "Stereo Accuracy ++",
+      status: "Epic",
       color: "bg-blue-500"
     },
     {

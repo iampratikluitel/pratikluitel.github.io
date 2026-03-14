@@ -1,6 +1,6 @@
 import MangaPanel from '@/components/MangaPanel'
 import SpeechBubble from '@/components/SpeechBubble'
-import { Plane, Building, Microscope, FileText, Award, MapPin } from 'lucide-react'
+import { Calendar, Building, Microscope, MapPin } from 'lucide-react'
 
 const ResearchArc = () => {
   return (
@@ -8,7 +8,7 @@ const ResearchArc = () => {
       {/* Chapter Title */}
       <MangaPanel variant="dramatic" className="p-8">
         <h2 className="manga-title text-4xl md:text-6xl mb-6 text-manga-red text-center">
-          CHAPTER IV: SINGAPORE SIMULATION
+          IV. SINGAPORE SIMULATION
         </h2>
         
         <div className="text-center mb-6">
@@ -42,7 +42,7 @@ const ResearchArc = () => {
                   <span><strong>Location:</strong> A*STAR, Singapore</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Plane className="w-4 h-4" />
+                  <Calendar className="w-4 h-4" />
                   <span><strong>Duration:</strong> Feb 2024 - May 2024</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -65,21 +65,22 @@ const ResearchArc = () => {
 
           </div>
 
-          <div className="space-y-4">
-            <SpeechBubble position="bottom-left">
-              <p className="font-manga">
-                <strong>Plot Twist:</strong> Turns out Singapore is not just a city-state but also 
-                a real-life simulation where efficiency reaches levels that defy the laws of physics!
+          <div className="space-y-3">
+            <div className="bg-blue-100 p-3 rounded-lg border-l-4 border-blue-500">
+              <p className="font-manga text-sm text-blue-800">
+                • Developed and benchmarked deep learning models for 3D vision tasks including depth estimation and stereo matching, achieving competitive performance on standard datasets.
               </p>
-            </SpeechBubble>
-
-            <SpeechBubble position="top-right">
-              <p className="font-manga">
-                <strong>Discovery:</strong> Research is like debugging, but instead of fixing code, 
-                you're trying to understand why the universe works the way it does.
+            </div>
+            <div className="bg-purple-100 p-3 rounded-lg border-l-4 border-purple-500">
+              <p className="font-manga text-sm text-purple-800">
+                • Proposed a novel edge-structure regularization framework for stereo matching, integrating a disparity aggregation module across multiple backbone networks.
               </p>
-            </SpeechBubble>
-
+            </div>
+            <div className="bg-yellow-100 p-3 rounded-lg border-l-4 border-yellow-500">
+              <p className="font-manga text-sm text-yellow-800">
+                • Built a night-to-day image translation model using GANs, improving downstream vision model accuracy in low-light conditions by reducing domain gap.
+              </p>
+            </div>
             <div className="sound-effect text-center text-2xl">EUREKA!</div>
           </div>
         </div>
@@ -143,6 +144,47 @@ const ResearchArc = () => {
                 <strong>Real World Boss Battle:</strong> Learned that enterprise software 
                 is like a massive multiplayer game where everyone has different objectives 
                 and the rules keep changing mid-game.
+              </p>
+            </SpeechBubble>
+          </div>
+        </div>
+      </MangaPanel>
+
+      {/* Clock B Internship */}
+      <MangaPanel className="p-8">
+        <h3 className="font-manga-title text-2xl text-center mb-6 text-manga-ink">
+          The Origin Story: First Mission
+        </h3>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
+            <div className="bg-manga-ink/5 p-6 rounded-lg border-2 border-manga-ink">
+              <h4 className="font-manga-title text-lg mb-4">Full Stack Developer Intern</h4>
+              <h5 className="font-manga text-md text-manga-ink mb-3">Clock B Business Technology, Kathmandu</h5>
+              <div className="space-y-2 font-manga text-sm mb-4">
+                <p><strong>Duration:</strong> May 2023 – Jul 2023</p>
+              </div>
+
+              <div className="space-y-3 mt-4">
+                <div className="bg-green-100 p-3 rounded-lg border-l-4 border-green-500">
+                  <p className="font-manga text-sm text-green-800">
+                    • Implemented UI/UX designs in HTML, CSS, and JavaScript, translating mockups into functional web interfaces.
+                  </p>
+                </div>
+                <div className="bg-blue-100 p-3 rounded-lg border-l-4 border-blue-500">
+                  <p className="font-manga text-sm text-blue-800">
+                    • Managed SQL databases and conducted unit and integration testing to ensure application reliability.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <SpeechBubble position="bottom-right">
+              <p className="font-manga">
+                <strong>Origin Arc:</strong> Every legendary developer starts somewhere. 
+                This was the tutorial level — learning the fundamentals before the real boss battles began.
               </p>
             </SpeechBubble>
           </div>

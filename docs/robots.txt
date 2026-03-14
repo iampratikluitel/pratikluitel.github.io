@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pratikluitel.github.io/sitemap.xml 
+Sitemap: https://pratik-luitel.com.np/sitemap.xml

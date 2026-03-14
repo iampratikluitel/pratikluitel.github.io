@@ -1,7 +1,6 @@
 import MangaPanel from '@/components/MangaPanel'
 import SpeechBubble from '@/components/SpeechBubble'
-import { Code, Database, Cpu, Brain, Zap, Shield, Calculator, Terminal } from 'lucide-react'
-import { CharacterBattle, MainCharacter, VillainCharacter } from '@/components/MangaCharacters'
+import { Code, Cpu, Brain, Zap, Calculator, Terminal, Eye } from 'lucide-react'
 
 const SkillScrolls = () => {
   const skillCategories = [
@@ -10,11 +9,26 @@ const SkillScrolls = () => {
       icon: <Code className="w-6 h-6" />,
       description: "The ancient tongues of machine communication",
       skills: [
-        { name: "Python", level: "Master", color: "bg-yellow-400", subtitle: "OpenCV, TensorFlow, PyTorch, Pandas" },
+        { name: "Python", level: "Master", color: "bg-yellow-400", subtitle: "OpenCV, NumPy, Pandas, Scikit-learn" },
+        { name: "C++", level: "Advanced", color: "bg-blue-600", subtitle: "Systems & robotics programming" },
         { name: "Java", level: "Advanced", color: "bg-orange-400", subtitle: "Object-oriented enlightenment" },
-        { name: "Node.js", level: "Advanced", color: "bg-green-500", subtitle: "JavaScript runtime mastery" },
         { name: "R", level: "Advanced", color: "bg-blue-400", subtitle: "Statistical wizardry" },
         { name: "MATLAB", level: "Advanced", color: "bg-red-400", subtitle: "Mathematical sorcery" }
+      ]
+    },
+    {
+      title: "Computer Vision & Robotics",
+      icon: <Eye className="w-6 h-6" />,
+      description: "Making machines see and move through the world",
+      skills: [
+        { name: "Depth Estimation", level: "Expert", color: "bg-cyan-500", subtitle: "Monocular & stereo methods" },
+        { name: "Stereo Matching", level: "Expert", color: "bg-blue-500", subtitle: "Disparity estimation & aggregation" },
+        { name: "Object Detection", level: "Advanced", color: "bg-red-500", subtitle: "YOLOv3/v8, real-time inference" },
+        { name: "Image Segmentation", level: "Advanced", color: "bg-purple-500", subtitle: "Semantic & instance" },
+        { name: "Point Cloud Processing", level: "Advanced", color: "bg-indigo-500", subtitle: "3D scene understanding" },
+        { name: "SLAM", level: "Advanced", color: "bg-teal-500", subtitle: "Simultaneous localization & mapping" },
+        { name: "ROS / ROS2", level: "Advanced", color: "bg-green-600", subtitle: "Robot Operating System" },
+        { name: "Sensor Fusion", level: "Advanced", color: "bg-orange-500", subtitle: "LiDAR, camera, IMU integration" }
       ]
     },
     {
@@ -139,7 +153,7 @@ const SkillScrolls = () => {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
-            <div key={category.title} className="space-y-4">
+            <div key={category.title} className={`space-y-4${index === skillCategories.length - 1 && skillCategories.length % 2 !== 0 ? ' lg:col-span-2 lg:max-w-[calc(50%-1rem)] lg:mx-auto w-full' : ''}`}>
               <div className="bg-manga-red/10 p-4 rounded-lg border-2 border-manga-red">
                 <div className="flex items-center justify-center gap-2 mb-2">
                   {category.icon}

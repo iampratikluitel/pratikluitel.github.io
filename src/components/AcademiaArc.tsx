@@ -134,12 +134,9 @@ const AcademiaArc = () => {
           {[
             "Artificial Intelligence",
             "Image Processing",
-            "Blockchain Technology",
+            "Machine Learning",
             "Data Visualization",
-            "Software Engineering",
             "Information Security",
-            "Internet of Things",
-            "Cyber Security",
           ].map((course) => (
             <div
               key={course}

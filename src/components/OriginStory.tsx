@@ -62,8 +62,8 @@ const OriginStory = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-manga-red" />
-                  <a href="tel:+9779840761001" className="hover:underline" target="_blank" rel="noopener noreferrer">
-                    <strong>Phone:</strong> +977 9840761001
+                  <a href="tel:+491634891962" className="hover:underline" target="_blank" rel="noopener noreferrer">
+                    <strong>Phone:</strong> +49 1634891962
                   </a>
                 </div>
                 <div className="flex items-center gap-3">

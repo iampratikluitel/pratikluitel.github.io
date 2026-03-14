@@ -117,4 +117,12 @@
     border-right: 13px solid transparent;
     border-top: 13px solid white;
   }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 } 

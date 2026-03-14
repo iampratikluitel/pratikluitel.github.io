@@ -7,6 +7,7 @@ import {
   Rocket,
   Globe,
   Lightbulb,
+  Book,
 } from "lucide-react";
 
 const BonnChapter = () => {
@@ -112,6 +113,40 @@ const BonnChapter = () => {
               </p>
             </div>
           </div>
+        </div>
+      </MangaPanel>
+
+      {/* Coursework */}
+      <MangaPanel variant="action" className="p-8">
+        <h3 className="font-manga-dramatic text-3xl text-center mb-8 text-manga-red">
+          THE KNOWLEDGE ACQUISITION PROTOCOL
+        </h3>
+
+        <SpeechBubble className="mb-6">
+          <p className="font-manga text-center">
+            <strong>Relevant Coursework:</strong> Or, "How to Make Robots Think and Move"
+          </p>
+        </SpeechBubble>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            "Robot Perception",
+            "Sensor Fusion",
+            "SLAM",
+            "Autonomous Systems",
+            "LiDAR",
+            "Global Navigation Satellite System",
+          ].map((course) => (
+            <div
+              key={course}
+              className="bg-manga-ink/5 p-3 rounded-lg border border-manga-ink"
+            >
+              <div className="flex items-center gap-2">
+                <Book className="w-4 h-4 text-manga-red" />
+                <span className="font-manga text-sm">{course}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </MangaPanel>
 
