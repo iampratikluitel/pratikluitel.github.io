@@ -85,8 +85,12 @@
   }
 
   .power-level {
-    @apply bg-manga-red text-white px-4 py-2 font-bold;
-    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
+    @apply bg-manga-red text-white px-4 py-2 font-bold inline-block;
+    transform: skewX(-8deg);
+  }
+  .power-level > * {
+    display: inline-block;
+    transform: skewX(8deg);
   }
 
   .speech-bubble {

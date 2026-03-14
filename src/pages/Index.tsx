@@ -89,10 +89,12 @@ const Index = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-manga-red text-white font-manga-title text-sm md:text-base px-6 py-3 border-4 border-manga-ink hover:bg-manga-ink transition-colors duration-200"
-            style={{ boxShadow: '4px 4px 0px rgba(0,0,0,0.8)', clipPath: 'polygon(0 0, calc(100% - 8px) 0, 100% 100%, 8px 100%)' }}
+            style={{ boxShadow: '4px 4px 0px rgba(0,0,0,0.8)', transform: 'skewX(-8deg)' }}
           >
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zm-8 2V5h2v6h1.17L12 13.17 9.83 11H11zm-6 7h14v2H5z"/></svg>
-            VIEW RÉSUMÉ
+            <span className="inline-flex items-center gap-2" style={{ transform: 'skewX(8deg)' }}>
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zm-8 2V5h2v6h1.17L12 13.17 9.83 11H11zm-6 7h14v2H5z"/></svg>
+              VIEW RÉSUMÉ
+            </span>
           </a>
         </div>
 
