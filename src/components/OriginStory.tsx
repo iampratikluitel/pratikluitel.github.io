@@ -60,12 +60,7 @@ const OriginStory = () => {
                     <strong>Location:</strong> Bonn, Germany
                   </a>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-manga-red" />
-                  <a href="tel:+491634891962" className="hover:underline" target="_blank" rel="noopener noreferrer">
-                    <strong>Phone:</strong> +49 1634891962
-                  </a>
-                </div>
+ 
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-manga-red" />
                   <a href="mailto:pratikluitel11@gmail.com" className="hover:underline" target="_blank" rel="noopener noreferrer">
