@@ -1,6 +1,19 @@
+import { Fragment } from 'react'
 import MangaPanel from '@/components/MangaPanel'
 import SpeechBubble from '@/components/SpeechBubble'
-import { Code, Cpu, Brain, Zap, Calculator, Terminal, Eye } from 'lucide-react'
+import { Code, Cpu, Brain, Zap, Terminal, Eye } from 'lucide-react'
+
+/** Permanent Marker draws "&" like "+"; use Comic Neue for ampersands in titles */
+const MangaTitleText = ({ text }: { text: string }) => (
+  <>
+    {text.split('&').map((part, i, parts) => (
+      <Fragment key={i}>
+        {i > 0 && <span className="font-manga font-bold">&</span>}
+        {part}
+      </Fragment>
+    ))}
+  </>
+)
 
 const SkillScrolls = () => {
   const skillCategories = [
@@ -25,32 +38,7 @@ const SkillScrolls = () => {
         { name: "Stereo Matching", level: "Expert", color: "bg-blue-500", subtitle: "Disparity estimation & aggregation" },
         { name: "Object Detection", level: "Advanced", color: "bg-red-500", subtitle: "YOLOv3/v8, real-time inference" },
         { name: "Image Segmentation", level: "Advanced", color: "bg-purple-500", subtitle: "Semantic & instance" },
-        { name: "Point Cloud Processing", level: "Advanced", color: "bg-indigo-500", subtitle: "3D scene understanding" },
-        { name: "SLAM", level: "Advanced", color: "bg-teal-500", subtitle: "Simultaneous localization & mapping" },
-        { name: "ROS / ROS2", level: "Advanced", color: "bg-green-600", subtitle: "Robot Operating System" },
-        { name: "Sensor Fusion", level: "Advanced", color: "bg-orange-500", subtitle: "LiDAR, camera, IMU integration" }
-      ]
-    },
-    {
-      title: "Mathematics",
-      icon: <Calculator className="w-6 h-6" />,
-      description: "The universal language of suffering",
-      skills: [
-        { name: "Linear Algebra", level: "Advanced", color: "bg-purple-500", subtitle: "Matrix multiplication nightmares" },
-        { name: "Calculus", level: "Advanced", color: "bg-indigo-500", subtitle: "Derivatives of despair" },
-        { name: "Probability & Statistics", level: "Advanced", color: "bg-pink-500", subtitle: "Quantifying uncertainty" }
-      ]
-    },
-    {
-      title: "Core Computer Science",
-      icon: <Brain className="w-6 h-6" />,
-      description: "The foundations of digital reality",
-      skills: [
-        { name: "Algorithms & Data Structures", level: "Expert", color: "bg-green-500", subtitle: "Elegant solutions to complex problems" },
-        { name: "Machine Learning", level: "Expert", color: "bg-blue-600", subtitle: "Teaching machines to think" },
-        { name: "Deep Learning", level: "Advanced", color: "bg-purple-600", subtitle: "Neural networks and digital souls" },
-        { name: "Image Processing", level: "Advanced", color: "bg-cyan-500", subtitle: "Making sense of pixels" },
-        { name: "Data Visualization", level: "Advanced", color: "bg-orange-500", subtitle: "Making data beautiful" }
+        { name: "SLAM", level: "Advanced", color: "bg-teal-500", subtitle: "Simultaneous localization & mapping" }
       ]
     },
     {
@@ -60,16 +48,23 @@ const SkillScrolls = () => {
       skills: [
         { name: "Git", level: "Advanced", color: "bg-gray-500", subtitle: "Version control sanity" },
         { name: "Docker", level: "Intermediate", color: "bg-blue-500", subtitle: "Containerized existence" },
-        { name: "Jupyter Notebook", level: "Expert", color: "bg-orange-400", subtitle: "Interactive enlightenment" },
-        { name: "MongoDB", level: "Advanced", color: "bg-green-700", subtitle: "NoSQL database mastery" },
-        { name: "Nest.js", level: "Advanced", color: "bg-red-600", subtitle: "Scalable Node.js framework" },
-        { name: "Data Annotation", level: "Advanced", color: "bg-purple-500", subtitle: "CVAT, LabelImg" },
         { name: "CUDA", level: "Intermediate", color: "bg-green-600", subtitle: "GPU acceleration magic" },
         { name: "OpenCL", level: "Intermediate", color: "bg-indigo-600", subtitle: "Parallel computing" },
-        { name: "Bash Scripting", level: "Advanced", color: "bg-gray-700", subtitle: "Automation wizardry" },
         { name: "Linux/Unix", level: "Advanced", color: "bg-black", subtitle: "Command line mastery" }
       ]
-    }
+    },
+    {
+      title: "Core Computer Science & Mathematics",
+      icon: <Brain className="w-6 h-6" />,
+      description: "The foundations of digital reality (and occasional suffering)",
+      skills: [
+        { name: "Algorithms & Data Structures", level: "Expert", color: "bg-green-500", subtitle: "Elegant solutions to complex problems" },
+        { name: "Machine Learning", level: "Expert", color: "bg-blue-600", subtitle: "Teaching machines to think" },
+        { name: "Deep Learning", level: "Advanced", color: "bg-purple-600", subtitle: "Neural networks and digital souls" },
+        { name: "Linear Algebra", level: "Advanced", color: "bg-purple-500", subtitle: "Matrix multiplication nightmares" },
+        { name: "Probability & Statistics", level: "Advanced", color: "bg-pink-500", subtitle: "Quantifying uncertainty" }
+      ]
+    },
   ]
 
   const softSkills = [
@@ -79,23 +74,24 @@ const SkillScrolls = () => {
     "Time Management"
   ]
 
-  const renderSkillBar = (skill: any) => (
+  const skillBarWidth = (level: string) =>
+    level === "Expert" ? "95%" : level === "Master" ? "90%" : level === "Advanced" ? "75%" : "60%";
+
+  const renderSkillBar = (skill: {
+    name: string;
+    level: string;
+    color: string;
+    subtitle?: string;
+  }) => (
     <div key={skill.name} className="mb-3">
-      <div className="flex justify-between items-center mb-1">
-        <span className="font-manga text-sm font-bold">{skill.name}</span>
-        <span className="font-manga-title text-xs">{skill.level}</span>
-      </div>
+      <span className="font-manga text-sm font-bold">{skill.name}</span>
       {skill.subtitle && (
-        <p className="font-manga text-xs text-gray-600 mb-1">{skill.subtitle}</p>
+        <p className="font-manga text-xs text-gray-600 mb-1 mt-1">{skill.subtitle}</p>
       )}
       <div className="w-full bg-gray-200 rounded-full h-3 border-2 border-manga-ink">
-        <div 
+        <div
           className={`${skill.color} h-full rounded-full border-r-2 border-manga-ink transition-all duration-1000`}
-          style={{ 
-            width: skill.level === 'Expert' ? '95%' : 
-                   skill.level === 'Master' ? '90%' :
-                   skill.level === 'Advanced' ? '75%' : '60%'
-          }}
+          style={{ width: skillBarWidth(skill.level) }}
         />
       </div>
     </div>
@@ -112,8 +108,7 @@ const SkillScrolls = () => {
         <div className="text-center mb-6">
           <SpeechBubble>
             <p className="text-lg font-manga">
-              At VIT, Pratik learned many things:
-            </p>
+            Pratik learned to translate uncertainty into something that looks like intent            </p>
           </SpeechBubble>
         </div>
       </MangaPanel>
@@ -135,7 +130,7 @@ const SkillScrolls = () => {
 
           <SpeechBubble position="top-left">
             <p className="font-manga text-center">
-              How to debug TensorFlow models at 3AM while questioning if free will exists.
+            How to correct deviations in something that never agreed on a baseline.
             </p>
           </SpeechBubble>
         </div>
@@ -152,13 +147,13 @@ const SkillScrolls = () => {
         </h3>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          {skillCategories.map((category, index) => (
-            <div key={category.title} className={`space-y-4${index === skillCategories.length - 1 && skillCategories.length % 2 !== 0 ? ' lg:col-span-2 lg:max-w-[calc(50%-1rem)] lg:mx-auto w-full' : ''}`}>
+          {skillCategories.map((category) => (
+            <div key={category.title} className="space-y-4">
               <div className="bg-manga-red/10 p-4 rounded-lg border-2 border-manga-red">
                 <div className="flex items-center justify-center gap-2 mb-2">
                   {category.icon}
                   <h4 className="font-manga-title text-lg text-manga-red">
-                    {category.title}
+                    <MangaTitleText text={category.title} />
                   </h4>
                 </div>
                 <p className="font-manga text-xs text-center italic mb-4 text-gray-600">

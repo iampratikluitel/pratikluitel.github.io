@@ -89,7 +89,7 @@ const VolunteeringArc = () => {
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-purple-100 p-5 rounded-lg border-2 border-purple-400 text-center space-y-3">
             <BookOpen className="w-10 h-10 text-purple-600 mx-auto" />
-            <h4 className="font-manga-title text-lg text-purple-800">Dark Manga</h4>
+            <h4 className="font-manga-title text-lg text-purple-800">Manga</h4>
             <p className="font-manga text-sm text-purple-700">
               Devours <em>Monster</em>, <em>Berserk</em>, and <em>Vagabond</em> — because
               regular narratives aren't existential enough.
@@ -125,59 +125,6 @@ const VolunteeringArc = () => {
         </div>
       </MangaPanel>
 
-      {/* Current Status */}
-      <MangaPanel variant="action" className="p-8">
-        <h3 className="font-manga-dramatic text-3xl text-center mb-8 text-manga-red">
-          CURRENT STATUS: STILL LOADING...
-        </h3>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="text-center space-y-4">
-            <Coffee className="w-16 h-16 text-manga-red mx-auto" />
-            <h4 className="font-manga-title text-xl">Daily Quests</h4>
-            <SpeechBubble className="text-sm">
-              <p className="font-manga">
-                - Read papers at breakfast
-                <br />
-                - Master new technologies
-                <br />
-                - Touch grass occasionally
-                <br />- Debug life.exe
-              </p>
-            </SpeechBubble>
-          </div>
-
-          <div className="text-center space-y-4">
-            <Globe className="w-16 h-16 text-manga-red mx-auto" />
-            <h4 className="font-manga-title text-xl">Future Missions</h4>
-            <SpeechBubble className="text-sm">
-              <p className="font-manga">
-                - Pursue doctoral research
-                <br />
-                - Publish more papers
-                <br />
-                - Build world-changing AI
-                <br />- Maybe learn to cook
-              </p>
-            </SpeechBubble>
-          </div>
-
-          <div className="text-center space-y-4">
-            <Heart className="w-16 h-16 text-manga-red mx-auto" />
-            <h4 className="font-manga-title text-xl">Life Goals</h4>
-            <SpeechBubble className="text-sm">
-              <p className="font-manga">
-                - Make technology accessible
-                <br />
-                - Mentor the next generation
-                <br />
-                - Complete manga collection
-                <br />- Achieve work-life balance
-              </p>
-            </SpeechBubble>
-          </div>
-        </div>
-      </MangaPanel>
 
       {/* Contact & Connect */}
       <MangaPanel className="p-8">
@@ -188,9 +135,7 @@ const VolunteeringArc = () => {
         <div className="text-center space-y-6">
           <SpeechBubble>
             <p className="font-manga text-lg">
-              Ready to embark on the next chapter of this epic journey? Whether
-              you want to collaborate on projects, discuss the latest in AI, or
-              debate which anime has the best plot twists, let's connect!
+            I will be around for the next stretch of this quiet unfolding mess—open to collaboration, conversation, or doing something mildly meaningful before everything shifts again.
             </p>
           </SpeechBubble>
 
@@ -250,10 +195,10 @@ const VolunteeringArc = () => {
                   <Trophy size={16} className="mt-0.5 flex-shrink-0" /> Analyzing 3rd division Norwegian football league
                 </p>
                 <p className="flex items-center gap-2">
-                  <BookOpen size={16} /> Manga &amp; anime aficionado
+                  <Gamepad2 size={16} /> Manga &amp; anime aficionado
                 </p>
                 <p className="flex items-center gap-2">
-                  <Gamepad2 size={16} /> Gaming companion (when time permits)
+                  <BookOpen size={16} /> I read sometimes.
                 </p>
               </div>
             </div>
@@ -288,10 +233,6 @@ const VolunteeringArc = () => {
           <div className="animate-pulse">
             <span className="text-6xl">●●●</span>
           </div>
-          <p className="font-manga text-sm text-gray-600">
-            Stay tuned for more adventures in the world of technology,
-            innovation, and the occasional existential crisis about semicolons.
-          </p>
         </div>
       </MangaPanel>
     </div>

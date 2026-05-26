@@ -1,6 +1,6 @@
 import MangaPanel from "@/components/MangaPanel";
 import SpeechBubble from "@/components/SpeechBubble";
-import { MapPin, Phone, Mail, User } from "lucide-react";
+import { MapPin, Mail, User } from "lucide-react";
 
 const OriginStory = () => {
   return (

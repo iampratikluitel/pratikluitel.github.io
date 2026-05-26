@@ -1,12 +1,12 @@
-# 🎭 Pratik Luitel's Manga-Themed Portfolio
+# Pratik Luitel's Manga-Themed Portfolio
 
 A unique personal website that tells my story through manga-style chapters, complete with dramatic sound effects, speech bubbles, and epic adventures in the world of technology.
 
-## 🚀 Live Demo
+## Live Demo
 
 Visit the live website: [pratikluitel.github.io](https://pratikluitel.github.io)
 
-## 🎨 Design Philosophy
+## Design Philosophy
 
 This portfolio breaks away from traditional resume formats by presenting my journey as a manga series, where each chapter represents a different aspect of my life and career. The design combines:
 
@@ -15,7 +15,7 @@ This portfolio breaks away from traditional resume formats by presenting my jour
 - **Responsive Design**: Optimized for all devices from mobile to desktop
 - **Performance Focus**: Fast loading with modern build tools
 
-## 🏗️ Technology Stack
+## Technology Stack
 
 ### Core Framework
 - **React 18.3.1** - Modern UI library with hooks
@@ -34,7 +34,7 @@ This portfolio breaks away from traditional resume formats by presenting my jour
 - **Performance Optimized** - Code splitting and optimized builds
 - **Modern Animations** - Smooth CSS transitions and keyframes
 
-## 📖 Chapter Structure
+## Chapter Structure
 
 The website is organized into six manga-style chapters:
 
@@ -45,42 +45,8 @@ The website is organized into six manga-style chapters:
 5. **Side Quests** - Project portfolio and achievements
 6. **Manga & Madness** - Community involvement and future plans
 
-## 🛠️ Development Setup
 
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/pratikluitel/pratikluitel.github.io.git
-
-# Navigate to project directory
-cd pratikluitel.github.io
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-```
-
-### Development Scripts
-
-```bash
-npm run dev          # Start development server (port 8080)
-npm run build        # Build for production
-npm run build:dev    # Build in development mode
-npm run preview      # Preview production build
-npm run lint         # Run ESLint
-```
-
-## 🎨 Custom Design System
+## Custom Design System
 
 ### Typography
 - **Comic Neue** - Primary text font
@@ -99,7 +65,7 @@ npm run lint         # Run ESLint
 - `SoundEffect` - Dramatic text styling
 - `PowerLevel` - Status indicators
 
-## 📱 Responsive Features
+## Responsive Features
 
 - **Mobile Navigation** - Collapsible chapter tabs
 - **Adaptive Layouts** - Content reorganizes for different screen sizes
@@ -118,21 +84,13 @@ npm run lint         # Run ESLint
 - Manga-themed color extensions
 - Component utilities for consistent styling
 
-## 🚀 Deployment
-
-The site is automatically deployed to GitHub Pages on push to the main branch.
 
 ### Manual Deployment
 ```bash
 npm run build
-# Deploy dist/ folder to your hosting platform
 ```
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
+## Contributing
 
 While this is a personal portfolio, I welcome:
 - Bug reports and fixes
@@ -140,15 +98,7 @@ While this is a personal portfolio, I welcome:
 - Accessibility enhancements
 - Design suggestions
 
-## 📞 Contact
-
-- **Email**: pratikluitel11@gmail.com
-- **Phone**: +977 9840761001
-- **LinkedIn**: [/in/pratikluitel](https://linkedin.com/in/pratikluitel)
-- **GitHub**: [@iampratikluitel](https://github.com/iampratikluitel)
 
 ---
 
-*Made with ❤️ and excessive amounts of coffee by Pratik Luitel*
-
-**Fun Fact**: This README is probably longer than some of my actual projects. The irony is not lost on me. 😄
+**Fun Fact**: This README is probably longer than some of my actual projects. The irony is not lost on me.

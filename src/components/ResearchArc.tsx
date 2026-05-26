@@ -201,7 +201,7 @@ const ResearchArc = () => {
           <p className="font-manga-handwrite text-lg italic text-center">
             "Life is a soup and we are all forks, trying to sip the stars while the void hums jazz in a language only snails remember"
           </p>
-          <p className="text-right font-manga text-sm mt-2">- Research Zen Master Pratik</p>
+          <p className="text-right font-manga text-sm mt-2">- Research Zen Pratik</p>
         </SpeechBubble>
 
         <div className="grid md:grid-cols-3 gap-6 text-center">
